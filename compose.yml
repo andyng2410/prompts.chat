@@ -30,6 +30,9 @@ services:
       DATABASE_URL: "postgresql://prompts:${POSTGRES_PASSWORD:-prompts}@db:5432/prompts?schema=public"
       DIRECT_URL: "postgresql://prompts:${POSTGRES_PASSWORD:-prompts}@db:5432/prompts?schema=public"
       AUTH_SECRET: "${AUTH_SECRET:-}"
+      AUTH_URL: "${AUTH_URL:-}"
+      NEXTAUTH_URL: "${NEXTAUTH_URL:-}"
+      AUTH_TRUST_HOST: "${AUTH_TRUST_HOST:-true}"
       NODE_ENV: production
       # Branding (all optional — set any PCHAT_* variable to customize at runtime)
       # PCHAT_NAME: "My Prompt Library"
